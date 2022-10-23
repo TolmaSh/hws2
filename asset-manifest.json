@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/TolmaSh/hws2/static/css/main.db429103.css",
-    "main.js": "/TolmaSh/hws2/static/js/main.8488b148.js",
-    "static/js/787.66cb4309.chunk.js": "/TolmaSh/hws2/static/js/787.66cb4309.chunk.js",
-    "static/media/avatar.png": "/TolmaSh/hws2/static/media/avatar.d947cb9d0d13765666b6.png",
-    "index.html": "/TolmaSh/hws2/index.html",
-    "main.db429103.css.map": "/TolmaSh/hws2/static/css/main.db429103.css.map",
-    "main.8488b148.js.map": "/TolmaSh/hws2/static/js/main.8488b148.js.map",
-    "787.66cb4309.chunk.js.map": "/TolmaSh/hws2/static/js/787.66cb4309.chunk.js.map"
+    "main.css": "/hws2/static/css/main.db429103.css",
+    "main.js": "/hws2/static/js/main.b0aedb88.js",
+    "static/js/787.66cb4309.chunk.js": "/hws2/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/hws2/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/hws2/index.html",
+    "main.db429103.css.map": "/hws2/static/css/main.db429103.css.map",
+    "main.b0aedb88.js.map": "/hws2/static/js/main.b0aedb88.js.map",
+    "787.66cb4309.chunk.js.map": "/hws2/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db429103.css",
-    "static/js/main.8488b148.js"
+    "static/js/main.b0aedb88.js"
   ]
 }
