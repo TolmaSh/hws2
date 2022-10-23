@@ -6,6 +6,7 @@ function App() {
     return (
         <div className={s.App}>
             <HW1/>
+            <hr/>
             {/*раскомментировать по ходу выполнения*/}
             {/*<HW2/>*/}
             {/*<HW3/>*/}

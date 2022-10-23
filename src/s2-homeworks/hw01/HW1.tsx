@@ -12,9 +12,20 @@ import avatar from './avatar.png'
 * 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx
 * 5 - сделать стили в соответствии с дизайном
 * */
-
+export type userType = {
+    avatar: string;
+    name: string;
+}
+export type userMessageType = {
+    text:string;
+    time: string;
+}
 // нужно создать правильный тип вместо any
-export type MessageType = any
+export interface MessageType {
+    id: number;
+    user: userType;
+    message: userMessageType;
+}
 
 // структуру объекта не менять
 export const message0: MessageType = {
@@ -44,9 +55,11 @@ const HW1 = () => {
     return (
         <div id={'hw1'}>
             <div className={s2.hwTitle}>Homework #1</div>
-            <div className={s2.hw}>
+            <hr/>
+            <div className={`${s2.hw} + ${s2.hw1}` }>
                 {/*проверка отображения (не менять)*/}
-                <div>
+
+                <div className={s2.hw}>
                     <Message message={message0} />
                     <FriendMessage message={friendMessage0} />
                 </div>
