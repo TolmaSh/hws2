@@ -4,6 +4,9 @@
     border: none;
     border-radius: 3px;
     color: #fff;
+
+}
+.default {
     background: #0066CC;
 }
 
@@ -21,16 +24,11 @@
     color: #0066CC;
 }
 
-.default {
-}
-
 .red {
     background: #CC1439;
 }
 
 .default:hover {
-}
-.button:hover {
     background: #0080FF;
 }
 
@@ -44,8 +42,6 @@
 
 
 .default:active {
-}
-.button:active {
     background: #0059B3;
 }
 
