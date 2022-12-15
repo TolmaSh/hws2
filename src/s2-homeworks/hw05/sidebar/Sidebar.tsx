@@ -10,6 +10,7 @@ type PropsType = {
 }
 
 export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
+    const activeLink = s.active
     const sidebarClass = s.sidebar
         + (open ? ' ' + s.open : '')
     return (
@@ -32,6 +33,9 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         to={PATH.PRE_JUNIOR}
                         onClick={handleClose}
                         // className={...} // делает студент
+                        className={({ isActive }) =>
+                            isActive ? activeLink : ''
+                        }
                     >
                         Pre-junior
                     </NavLink>
@@ -40,6 +44,9 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         to={PATH.JUNIOR}
                         onClick={handleClose}
                         // className={...} // делает студент
+                        className={({ isActive }) =>
+                            isActive ? activeLink : ''
+                        }
                     >
                         Junior
                     </NavLink>
@@ -48,6 +55,9 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         to={PATH.JUNIOR_PLUS}
                         onClick={handleClose}
                         // className={...} // делает студент
+                        className={({ isActive }) =>
+                            isActive ? activeLink : ''
+                        }
                     >
                         Junior Plus
                     </NavLink>
