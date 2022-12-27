@@ -1,2 +1,4 @@
-.container {
+.wrapper {
+    display: flex;
+    gap: 130px;
 }

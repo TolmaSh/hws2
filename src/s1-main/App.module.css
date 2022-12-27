@@ -5,8 +5,8 @@
 .hw {
     padding-top: 25px;
     padding-bottom: 30px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 10px;
+
     display: flex;
     flex-direction: column;
     gap: 20px;
