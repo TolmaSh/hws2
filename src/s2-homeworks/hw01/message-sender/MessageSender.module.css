@@ -10,9 +10,8 @@
     min-height: 40px;
     padding-left: 24px;
     padding-top: 12px;
-    padding-bottom: 12px;
     background: #F5F7FB;
-    box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+    box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0 1px 2px rgba(29, 33, 38, 0.1);
     border-radius: 20px;
     resize: none;
     font-style: normal;
@@ -28,7 +27,7 @@
     border-radius: 20px;
     border: none;
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
