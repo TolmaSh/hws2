@@ -16,7 +16,7 @@ function Clock() {
     // for autotests // не менять // можно подсунуть в локалСторэдж нужную дату, чтоб увидеть как она отображается
     const [date, setDate] = useState<Date>(new Date(restoreState('hw9-date', Date.now())))
     const [show, setShow] = useState<boolean>(false)
-    const [currentTime, setCurrentTime] = useState<string>(`${getZero(date.getHours())}.${getZero(date.getMinutes())}.${getZero(date.getSeconds())}`)
+    const [currentTime, setCurrentTime] = useState<string>(`${getZero(date.getHours())}:${getZero(date.getMinutes())}:${getZero(date.getSeconds())}`)
     const [currentDate, setCurrentDate] = useState<string>(`${getZero(date.getDate())}.${getZero(date.getMonth() + 1)}.${getZero(date.getFullYear())}`)
 
 
@@ -25,7 +25,7 @@ function Clock() {
         // сохранить ид таймера (https://learn.javascript.ru/settimeout-setinterval#setinterval)
         const getTime = () => {
             const date = new Date(Date.now())
-            setCurrentTime(`${getZero(date.getHours())}.${getZero(date.getMinutes())}.${getZero(date.getSeconds())}`)
+            setCurrentTime(`${getZero(date.getHours())}:${getZero(date.getMinutes())}:${getZero(date.getSeconds())}`)
         }
         getTime()
         setTimerId(+setInterval(() => getTime(), 1000))
@@ -57,8 +57,8 @@ function Clock() {
     });
     const disableButtons = timerId !== undefined
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
-    const stringDay = `${dateDay.format(date.getDate())}` || <br/> // пишут студенты
-    const stringMonth = `${dateMonth.format(date.getDate())}` || <br/> // пишут студенты
+    const stringDay = `${dateDay.format(date)}` || <br/> // пишут студенты
+    const stringMonth = `${dateMonth.format(date)}` || <br/> // пишут студенты
 
     return (
         <div className={s.clock}>
