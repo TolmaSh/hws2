@@ -2,7 +2,14 @@
 }
 
 .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 300px;
+
 }
 
 .number {
+    font-weight: 600;
+    font-size: 16px;
 }
